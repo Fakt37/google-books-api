@@ -1,0 +1,33 @@
+.searchContainer
+	position: relative
+	display: flex
+	align-items: center
+	flex-direction: column
+	padding: 50px 0
+	background-image: url('../../assets/images/bg-header.jpg')
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	z-index: 0
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-color: rgba(0, 0, 0, 0.5)
+		z-index: -1
+
+.searchSelectGroup
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 590px
+	column-gap: 10px
+
+@media screen and (max-width: 768px)
+	.searchSelectGroup
+		width: auto
+		flex-direction: column
+		row-gap: 10px

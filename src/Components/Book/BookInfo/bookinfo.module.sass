@@ -1,0 +1,50 @@
+@import './../../colors.sass'
+.bookInfoContainer
+	position: relative
+	display: flex
+.bookInfoPoster,
+.bookInfoText
+	flex: 1
+.bookInfoPoster
+	display: flex
+	justify-content: center
+	align-items: center
+	min-height: 100%
+	padding: 30px
+	background-color: $grey
+.bookInfoText
+	padding: 30px
+.bookInfoCategories
+	margin: 0
+	margin-bottom: 20px
+	color: $grey66
+.bookInfoTitle
+	margin: 0
+	margin-bottom: 20px
+.bookInfoAuthors
+	margin: 0
+	margin-bottom: 30px
+	color: $greyCE
+	text-decoration: underline
+
+.bookInfoDescriptionWrapper
+	padding: 20px
+	border: 1px solid $greyCE
+.bookInfoDescription
+	ine-height: 18px
+	color: $black
+.buttonClose
+	position: absolute
+	top: 20px
+	right: 20px
+	padding: 5px
+	border: 2px solid $grey
+	border-radius: 5px
+	cursor: pointer
+	&:hover
+		outline: 2px solid $grey
+		outline-offset: 2px
+
+@media screen and (max-width: 768px)
+	.bookInfoContainer
+		flex-direction: column

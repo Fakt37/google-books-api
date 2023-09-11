@@ -1,0 +1,35 @@
+@import './../colors.sass'
+.bookItem
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	padding: 10px
+	background-color: $grey
+	width: 250px
+	min-height: 300px
+	cursor: pointer
+	border-radius: 5px
+	&:hover
+		transform: scale(1.08)
+.bookPoster
+	margin: 0 auto
+.bookInfo
+	flex-grow: 1
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: flex-end
+	align-items: flex-start
+	padding: 10px
+	box-sizing: border-box
+.bookTitle
+	margin: 0
+	margin-bottom: 10px
+	font-size: 18px
+.bookCategories
+	margin: 0
+	margin-bottom: 10px
+	color: $grey66
+	text-decoration: underline
+.bookAuthor
+	margin: 0
